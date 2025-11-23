@@ -9,53 +9,40 @@ Deploy a modular, reusable web server infrastructure using Terraform on AWS. Thi
 - Outputs for seamless integration.
 - Example deployment files provided.
 
-## Folder Structure
 
-```
-.
-├── main.tf            # Entry point for defining resources and module usage
-├── variables.tf       # Input variables for configuration
-├── outputs.tf         # Outputs of deployed resources
-├── modules/           # Contains reusable Terraform modules
-│   ├── web-server/    # Module for deploying web server(s)
-│   ├── network/       # Module for networking resources
-
-
-## Getting Started
-
-### Prerequisites
+## Prerequisites
 
 - [Terraform](https://www.terraform.io/downloads.html) ≥ 0.13
 - AWS account and credentials with permissions to create resources
 
-### Usage
+## Usage
 
-1. **Clone the repository:**
+1. Clone the repository:
     ```sh
     git clone https://github.com/btilki/Deploy-a-web-server-using-Terraform-module.git
     cd Deploy-a-web-server-using-Terraform-module
     ```
 
-2. **Initialize Terraform:**
+2. Initialize Terraform:
     ```sh
     terraform init
     ```
 
-3. **Review and adjust variables:**
+3. Review and adjust variables:
     - Edit `variables.tf` for custom values or set them via `terraform.tfvars`
 
-4. **Plan infrastructure:**
+4. Plan infrastructure:
     ```sh
     terraform plan
     ```
 
-5. **Deploy infrastructure:**
+5. Deploy infrastructure:
     ```sh
     terraform apply
     ```
     Confirm when prompted.
 
-6. **Destroy infrastructure (when finished):**
+6. Destroy infrastructure (when finished):
     ```sh
     terraform destroy
     ```
