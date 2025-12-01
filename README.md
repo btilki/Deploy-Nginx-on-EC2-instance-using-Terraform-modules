@@ -1,18 +1,18 @@
-# Deploy a Web Server Using Terraform Modules
+# Deploy Nginx on EC2 instance using the user's own Terraform modules
 
-Deploy a modular, reusable web server infrastructure using Terraform on AWS. This repository demonstrates best practices in infrastructure-as-code (IaC), enabling scalable, maintainable deployments with the aid of Terraform modules.
+Deploy a modular, reusable Nginx infrastructure using Terraform on AWS. This repository demonstrates best practices in infrastructure-as-code (IaC), enabling scalable, maintainable deployments with the aid of Terraform modules.
 
 ## Features
 
 - Modular design: Each infrastructure component (network, server, security groups, etc.) is implemented as a separate Terraform module.
-- Parameterized deployment: Flexible configuration using variables.
+- Parameterised deployment: Flexible configuration using variables.
 - Outputs for seamless integration.
 - Example deployment files provided.
 
 
 ## Prerequisites
 
-- [Terraform](https://www.terraform.io/downloads.html) ≥ 0.13
+- Terraform
 - AWS account and credentials with permissions to create resources
 
 ## Usage
