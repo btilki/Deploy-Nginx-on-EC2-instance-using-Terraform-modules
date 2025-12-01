@@ -19,11 +19,11 @@ Deploy a modular, reusable Nginx infrastructure using Terraform on AWS. This rep
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/btilki/Deploy-a-web-server-using-Terraform-module.git
-    cd Deploy-a-web-server-using-Terraform-module
+    git clone https://github.com/btilki/Deploy-Nginx-on-EC2-instance-using-Terraform-modules.git
+    cd Deploy-Nginx-on-EC2-instance-using-Terraform-modules
     ```
 
-2. Initialize Terraform:
+2. Initialise Terraform:
     ```sh
     terraform init
     ```
@@ -62,7 +62,16 @@ module "web_server" {
 
 ## Outputs
 
-After deployment, useful information such as public IPs and DNS names are available in the output.
+Use public IP info in the Output, to enter the EC2 instance or run Nginx:
+
+To enter the EC2 instance:
+   ```sh
+ ssh ec2-user@Public IP
+   ```
+To run Nginx in the browser
+   ```sh
+public IP:8080
+   ```
 
 
 ## License
